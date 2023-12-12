@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fall_2023_project/app/models/user.dart';
 import 'package:fall_2023_project/app/widgets/app_bar.dart';
+import 'package:fall_2023_project/app/resources/colors.dart';
 import 'package:fall_2023_project/app/pages/profile_page.dart';
 import 'package:fall_2023_project/app/pages/settings_page.dart';
 
@@ -20,12 +21,15 @@ class MainPage extends StatelessWidget {
                 CustomAppBar(user: user),
               ];
             },
-            body: const TabBarView(
-              physics: NeverScrollableScrollPhysics(),
-              children: <Widget>[
-                ProfilePage(),
-                SettingsPage(),
-              ],
+            body: const ColoredBox(
+              color: AppColors.pagePrimary,
+              child: TabBarView(
+                physics: NeverScrollableScrollPhysics(),
+                children: <Widget>[
+                  ProfilePage(),
+                  SettingsPage(),
+                ],
+              ),
             ),
           ),
         ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors {
   static const Color primary = Colors.white;
+  static const Color pagePrimary = Color(0xFFFAFAFA);
   static const Color cardPrimary = Colors.white;
   static const Color textPrimary = Colors.black;
   static final Color textSecondary = Colors.black.withOpacity(0.55);
