@@ -18,27 +18,28 @@ class MainPage extends StatelessWidget {
       child: Scaffold(
         body: SafeArea(
           child: NestedScrollView(
-              headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-                return <Widget>[
-                  CustomAppBar(user: user),
-                ];
-              },
-              body: ColoredBox(
-                color: AppColors.pagePrimary,
-                child: TabBarView(
-                  physics: const NeverScrollableScrollPhysics(),
-                  children: <Widget>[
-                    ProfilePage(
-                      children: <Widget>[
-                        Subscriptions(cards: cards),
-                        Text('child 2'),
-                        Text('child 3'),
-                      ],
-                    ),
-                    const SettingsPage(),
-                  ],
-                ),
-              )),
+            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+              return <Widget>[
+                CustomAppBar(user: user),
+              ];
+            },
+            body: ColoredBox(
+              color: AppColors.pagePrimary,
+              child: TabBarView(
+                physics: const NeverScrollableScrollPhysics(),
+                children: <Widget>[
+                  ProfilePage(
+                    children: <Widget>[
+                      Subscriptions(cards: cards),
+                      Text('child 2'),
+                      Text('child 3'),
+                    ],
+                  ),
+                  const SettingsPage(),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
