@@ -10,5 +10,7 @@ abstract class AppColors {
   static const Color iconBrand = Color(0xFF08A652);
   static final Color iconSecondary = Colors.black.withOpacity(0.32);
   static final Color chipsBrandEnabled = Colors.black.withOpacity(0.08);
-  static const Color shadow = Color(0x7A1D1D25);
+  static const Color userImageShadow = Color(0x7A1D1D25);
+  static const Color cardShadow1 = Color(0x124F4F6C);
+  static const Color cardShadow2 = Color(0x14000000);
 }

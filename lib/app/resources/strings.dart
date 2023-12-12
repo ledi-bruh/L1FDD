@@ -8,9 +8,11 @@ abstract class Strings {
   static const String subsTitle = "У вас подключено";
   static const String subsDescription =
       "Подписки, автоплатежи и сервисы, на которые вы подписались";
+  static const String sberPrimeImageName = "assets/images/sberPrime.png";
   static const String sberPrimeTitle = "СберПрайм";
   static const String sberPrimeSecondaryTitle = "Платёж 9 июля";
   static const String sberPrimeSubtitle = "199 ₽ в месяц";
+  static const String transfersImageName = "assets/images/transfers.png";
   static const String transfersTitle = "Переводы";
   static const String transfersSecondaryTitle = "Автопродление 21 августа";
   static const String transfersSubtitle = "199 ₽ в месяц";

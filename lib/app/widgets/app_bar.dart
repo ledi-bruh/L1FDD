@@ -32,7 +32,7 @@ class CustomAppBar extends StatelessWidget {
                 decoration: ShapeDecoration(
                   shadows: const [
                     BoxShadow(
-                      color: AppColors.shadow,
+                      color: AppColors.userImageShadow,
                       offset: Offset(0, 16),
                       blurRadius: 24.0,
                       spreadRadius: -16.0,
