@@ -11,6 +11,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       backgroundColor: AppColors.primary,
+      expandedHeight: 250.0,
       floating: true,
       pinned: true,
       snap: false,
@@ -18,6 +19,35 @@ class CustomAppBar extends StatelessWidget {
         icon: const Icon(Icons.close),
         color: AppColors.tabBrand,
         onPressed: () {},
+      ),
+      flexibleSpace: FlexibleSpaceBar(
+        background: Center(
+          child: Column(
+            children: <Widget>[
+              const SizedBox(height: 14.0),
+              Container(
+                height: 110.0,
+                width: 110.0,
+                decoration: ShapeDecoration(
+                  shadows: const [
+                    BoxShadow(
+                      color: AppColors.shadow,
+                      offset: Offset(0, 16),
+                      blurRadius: 24.0,
+                      spreadRadius: -16.0,
+                    ),
+                  ],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(38),
+                  ),
+                ),
+                child: Image.asset("assets/images/userPhoto.png"),
+              ),
+              const SizedBox(height: 36.0),
+              const Text(Strings.userName),
+            ],
+          ),
+        ),
       ),
       actions: <Widget>[
         IconButton(
