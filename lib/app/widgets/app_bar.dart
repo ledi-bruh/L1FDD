@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fall_2023_project/app/models/user.dart';
 import 'package:fall_2023_project/app/resources/strings.dart';
 import 'package:fall_2023_project/app/resources/colors.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+  const CustomAppBar({super.key, required this.user});
 
-  // todo user
+  final UserModel user;
 
   @override
   Widget build(BuildContext context) {
@@ -41,10 +42,10 @@ class CustomAppBar extends StatelessWidget {
                     borderRadius: BorderRadius.circular(38),
                   ),
                 ),
-                child: Image.asset("assets/images/userPhoto.png"),
+                child: Image.asset(user.imageName),
               ),
               const SizedBox(height: 36.0),
-              const Text(Strings.userName),
+              Text(user.name),
             ],
           ),
         ),
