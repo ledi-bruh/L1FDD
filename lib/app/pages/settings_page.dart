@@ -6,6 +6,8 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(Strings.inDev);
+    return const Center(
+      child: Text(Strings.inDev),
+    );
   }
 }
