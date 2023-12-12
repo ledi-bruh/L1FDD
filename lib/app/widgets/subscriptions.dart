@@ -5,21 +5,33 @@ import 'package:fall_2023_project/app/widgets/block.dart';
 import 'package:fall_2023_project/app/models/card.dart';
 
 class Subscriptions extends StatelessWidget {
-  const Subscriptions({super.key});
+  const Subscriptions({super.key, required this.cards});
+
+  final List<CardModel> cards;
 
   @override
   Widget build(BuildContext context) {
     return Block(
       title: Strings.subsTitle,
       description: Strings.subsDescription,
-      child: CardWidget(card: cards[0])
-      // ListView(
-      //   scrollDirection: Axis.horizontal,
-      //   children: <Widget>[
-      //     CardWidget(card: cards[0]),
-      //     CardWidget(card: cards[1]),
-      //   ],
-      // ),
+      child: SizedBox(
+        width: double.infinity,
+        height: 130.0,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            separatorBuilder: (BuildContext context, int index) {
+              return const SizedBox(width: 8.0);
+            },
+            itemCount: cards.length,
+            itemBuilder: (ctx, index) {
+              return CardWidget(card: cards[index]);
+            },
+            clipBehavior: Clip.none,
+          ),
+        ),
+      ),
     );
   }
 }

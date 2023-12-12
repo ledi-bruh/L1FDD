@@ -44,10 +44,12 @@ class CardWidget extends StatelessWidget {
                   width: 36.0,
                   height: 36.0,
                 ),
+                const SizedBox(width: 12.0),
                 Text(card.title),
               ],
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(card.secondaryTitle),
                 Text(card.subtitle),
