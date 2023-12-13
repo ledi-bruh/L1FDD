@@ -28,4 +28,11 @@ abstract class Strings {
   static const String tariffsAndLimitsInfoImageName = "assets/images/tariffsLimitsInfo.png";
   static const String tariffsAndLimitsInfoTitle = "Информация о тарифах и лимитах";
   static const String rightArrowImageName = "assets/images/arrow_right.png";
+  static const String food = "Еда";
+  static const String selfDev = "Саморазвитие";
+  static const String tech = "Технологии";
+  static const String home = "Дом";
+  static const String leisure = "Досуг";
+  static const String careYourself = "Забота о себе";
+  static const String science = "Наука";
 }
