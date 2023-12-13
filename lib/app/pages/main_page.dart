@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:fall_2023_project/app/models/user.dart';
+import 'package:fall_2023_project/app/models/card.dart';
 import 'package:fall_2023_project/app/widgets/app_bar.dart';
 import 'package:fall_2023_project/app/resources/colors.dart';
 import 'package:fall_2023_project/app/pages/profile_page.dart';
 import 'package:fall_2023_project/app/pages/settings_page.dart';
 import 'package:fall_2023_project/app/widgets/subscriptions.dart';
-import 'package:fall_2023_project/app/models/card.dart';
+import 'package:fall_2023_project/app/widgets/tariffs_info.dart';
+import 'package:fall_2023_project/app/widgets/interests.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -31,8 +33,8 @@ class MainPage extends StatelessWidget {
                   ProfilePage(
                     children: <Widget>[
                       Subscriptions(cards: cards),
-                      Text('child 2'),
-                      Text('child 3'),
+                      // const TariffsInfo(),
+                      // const Interests(),
                     ],
                   ),
                   const SettingsPage(),

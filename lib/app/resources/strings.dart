@@ -6,8 +6,7 @@ abstract class Strings {
   static const String settings = "Настройки";
   static const String inDev = "В разработке ⚙️";
   static const String subsTitle = "У вас подключено";
-  static const String subsDescription =
-      "Подписки, автоплатежи и сервисы, на которые вы подписались";
+  static const String subsDescription = "Подписки, автоплатежи и сервисы, на которые вы подписались";
   static const String sberPrimeImageName = "assets/images/sberPrime.png";
   static const String sberPrimeTitle = "СберПрайм";
   static const String sberPrimeSecondaryTitle = "Платёж 9 июля";
@@ -16,4 +15,8 @@ abstract class Strings {
   static const String transfersTitle = "Переводы";
   static const String transfersSecondaryTitle = "Автопродление 21 августа";
   static const String transfersSubtitle = "199 ₽ в месяц";
+  static const String tariffsInfoTitle = "Тарифы и лимиты";
+  static const String tariffsInfoDescription = "Для операций в Сбербанк Онлайн";
+  static const String interestsTitle = "Интересы";
+  static const String interestsDescription = "Мы подбираем истории и предложения по темам, которые вам нравятся";
 }
