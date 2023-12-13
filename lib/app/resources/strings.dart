@@ -19,4 +19,13 @@ abstract class Strings {
   static const String tariffsInfoDescription = "Для операций в Сбербанк Онлайн";
   static const String interestsTitle = "Интересы";
   static const String interestsDescription = "Мы подбираем истории и предложения по темам, которые вам нравятся";
+  static const String changeDailyLimitImageName = "assets/images/dailyLimit.png";
+  static const String changeDailyLimitTitle = "Изменить суточный лимит";
+  static const String changeDailyLimitDescription = "На платежи и переводы";
+  static const String transfersWithoutCommissionImageName = "assets/images/transfersZeroCommission.png";
+  static const String transfersWithoutCommissionTitle = "Переводы без комиссии";
+  static const String transfersWithoutCommissionDescription = "Показать остаток в этом месяце";
+  static const String tariffsAndLimitsInfoImageName = "assets/images/tariffsLimitsInfo.png";
+  static const String tariffsAndLimitsInfoTitle = "Информация о тарифах и лимитах";
+  static const String rightArrowImageName = "assets/images/arrow_right.png";
 }

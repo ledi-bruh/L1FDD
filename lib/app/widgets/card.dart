@@ -51,8 +51,8 @@ class CardWidget extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(card.secondaryTitle),
-                Text(card.subtitle),
+                Text(card.secondaryTitle!),
+                Text(card.subtitle!),
               ],
             ),
           ],

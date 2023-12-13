@@ -4,14 +4,14 @@ class CardModel {
   CardModel({
     required this.cardImageName,
     required this.title,
-    required this.secondaryTitle,
-    required this.subtitle,
+    this.secondaryTitle,
+    this.subtitle,
   });
 
   final String cardImageName;
   final String title;
-  final String secondaryTitle;
-  final String subtitle;
+  final String? secondaryTitle;
+  final String? subtitle;
 }
 
 final List<CardModel> cards = <CardModel>[
@@ -26,5 +26,22 @@ final List<CardModel> cards = <CardModel>[
     title: Strings.transfersTitle,
     secondaryTitle: Strings.transfersSecondaryTitle,
     subtitle: Strings.transfersSubtitle,
+  ),
+];
+
+final List<CardModel> tariffsAndLLimitsCards = <CardModel>[
+  CardModel(
+    cardImageName: Strings.changeDailyLimitImageName,
+    title: Strings.changeDailyLimitTitle,
+    subtitle: Strings.changeDailyLimitDescription,
+  ),
+  CardModel(
+    cardImageName: Strings.transfersWithoutCommissionImageName,
+    title: Strings.transfersWithoutCommissionTitle,
+    subtitle: Strings.transfersWithoutCommissionDescription,
+  ),
+  CardModel(
+    cardImageName: Strings.tariffsAndLimitsInfoImageName,
+    title: Strings.tariffsAndLimitsInfoTitle,
   ),
 ];

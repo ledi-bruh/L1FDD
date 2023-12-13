@@ -6,7 +6,7 @@ import 'package:fall_2023_project/app/resources/colors.dart';
 import 'package:fall_2023_project/app/pages/profile_page.dart';
 import 'package:fall_2023_project/app/pages/settings_page.dart';
 import 'package:fall_2023_project/app/widgets/subscriptions.dart';
-import 'package:fall_2023_project/app/widgets/tariffs_info.dart';
+import 'package:fall_2023_project/app/widgets/tariffs_and_limits.dart';
 import 'package:fall_2023_project/app/widgets/interests.dart';
 
 class MainPage extends StatelessWidget {
@@ -33,8 +33,8 @@ class MainPage extends StatelessWidget {
                   ProfilePage(
                     children: <Widget>[
                       Subscriptions(cards: cards),
-                      // const TariffsInfo(),
-                      // const Interests(),
+                      TariffsAndLimits(cards: tariffsAndLLimitsCards),
+                      Interests(),
                     ],
                   ),
                   const SettingsPage(),
