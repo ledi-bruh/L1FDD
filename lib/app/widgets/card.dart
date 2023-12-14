@@ -49,14 +49,23 @@ class CardWidget extends StatelessWidget {
                       height: 36.0,
                     ),
                     const SizedBox(width: 12.0),
-                    Text(card.title),
+                    Text(
+                      card.title,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
                   ],
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(card.secondaryTitle!),
-                    Text(card.subtitle!),
+                    Text(
+                      card.secondaryTitle!,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                    Text(
+                      card.subtitle!,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
                   ],
                 ),
               ],

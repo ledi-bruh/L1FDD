@@ -12,6 +12,7 @@ abstract class AppTheme {
       displayMedium: AppFonts.displayMedium,
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
+      bodyLarge: AppFonts.bodyLarge,
       bodyMedium: AppFonts.bodyMedium,
       bodySmall: AppFonts.bodySmall,
       labelMedium: AppFonts.labelMedium,

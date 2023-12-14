@@ -30,13 +30,20 @@ class TariffsAndLimitsCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(card.title),
-                    if (card.subtitle != null) Text(card.subtitle!),
+                    Text(
+                      card.title,
+                      style: Theme.of(context).textTheme.labelMedium,
+                    ),
+                    if (card.subtitle != null)
+                      Text(
+                        card.subtitle!,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
+              const Padding(
+                padding: EdgeInsets.only(
                   left: 16.0,
                   right: 8.0,
                 ),

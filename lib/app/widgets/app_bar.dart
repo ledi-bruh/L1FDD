@@ -45,7 +45,10 @@ class CustomAppBar extends StatelessWidget {
                 child: Image.asset(user.imageName),
               ),
               const SizedBox(height: 36.0),
-              Text(user.name),
+              Text(
+                user.name,
+                style: Theme.of(context).textTheme.displayMedium,
+              ),
             ],
           ),
         ),
@@ -58,12 +61,18 @@ class CustomAppBar extends StatelessWidget {
         )
       ],
       bottom: TabBar(
-        tabs: const <Widget>[
+        tabs: <Widget>[
           Tab(
-            text: Strings.profile,
+            child: Text(
+              Strings.profile,
+              style: Theme.of(context).textTheme.labelMedium,
+            ),
           ),
           Tab(
-            text: Strings.settings,
+            child: Text(
+              Strings.settings,
+              style: Theme.of(context).textTheme.labelMedium,
+            ),
           ),
         ],
         indicatorColor: AppColors.tabBrand,

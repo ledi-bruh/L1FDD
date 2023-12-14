@@ -22,7 +22,7 @@ class TariffsAndLimits extends StatelessWidget {
             for (var (index, card) in cards.indexed) ...[
               TariffsAndLimitsCard(card: card),
               if (index < cards.length - 1)
-                Divider(
+                const Divider(
                   height: 0.0,
                   indent: 50.0,
                   color: AppColors.divider,

@@ -34,12 +34,21 @@ abstract class AppFonts {
     height: 1.25,
     fontFamily: FontFamilies.text,
   );
-  static const TextStyle bodyMedium = TextStyle(
+  static const TextStyle bodyLarge = TextStyle(
     color: AppColors.textSecondary,
     fontSize: 14,
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     letterSpacing: -0.42,
+    height: 9 / 7,
+    fontFamily: FontFamilies.text,
+  );
+  static const TextStyle bodyMedium = TextStyle(
+    color: AppColors.textPrimary,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    fontStyle: FontStyle.normal,
+    letterSpacing: -0.406,
     height: 9 / 7,
     fontFamily: FontFamilies.text,
   );
@@ -52,7 +61,7 @@ abstract class AppFonts {
     height: 9 / 7,
     fontFamily: FontFamilies.text,
   );
-  static const TextStyle labelMedium = TextStyle(
+  static const TextStyle labelMedium = TextStyle( //
     color: AppColors.textPrimary,
     fontSize: 16,
     fontWeight: FontWeight.w500,
@@ -61,7 +70,7 @@ abstract class AppFonts {
     height: 1.25,
     fontFamily: FontFamilies.text,
   );
-  static const TextStyle labelSmall = TextStyle(
+  static const TextStyle labelSmall = TextStyle(  //
     color: AppColors.textPrimary,
     fontSize: 14,
     fontWeight: FontWeight.w500,

@@ -21,7 +21,7 @@ class _InterestState extends State<Interest> {
   @override
   void initState() {
     super.initState();
-    _isSelected  = widget.isSelected;
+    _isSelected = widget.isSelected;
   }
 
   @override
@@ -32,7 +32,10 @@ class _InterestState extends State<Interest> {
   @override
   Widget build(BuildContext context) {
     return FilterChip(
-      label: Text(widget.name),
+      label: Text(
+        widget.name,
+        style: Theme.of(context).textTheme.labelSmall,
+      ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
         side: const BorderSide(color: AppColors.transparent),
@@ -46,7 +49,7 @@ class _InterestState extends State<Interest> {
       selectedColor: AppColors.chipsBrandEnabled,
       onSelected: (_) {
         setState(() {
-          _isSelected  = _;
+          _isSelected = _;
           setState(() {});
         });
       },
