@@ -34,7 +34,7 @@ class MainPage extends StatelessWidget {
                     children: <Widget>[
                       Subscriptions(cards: cards),
                       TariffsAndLimits(cards: tariffsAndLLimitsCards),
-                      Interests(),
+                      const Interests(),
                     ],
                   ),
                   const SettingsPage(),

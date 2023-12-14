@@ -9,41 +9,45 @@ class TariffsAndLimitsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: 12.0,
-        ),
-        child: Row(
-          children: [
-            Image.asset(
-              card.cardImageName,
-              width: 36.0,
-              height: 36.0,
-            ),
-            const SizedBox(width: 12.0),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(card.title),
-                  if (card.subtitle != null) Text(card.subtitle!),
-                ],
+    return Material(
+      color: AppColors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(8.0),
+        onTap: () {},
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: 12.0,
+          ),
+          child: Row(
+            children: [
+              Image.asset(
+                card.cardImageName,
+                width: 36.0,
+                height: 36.0,
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 16.0,
-                right: 8.0,
+              const SizedBox(width: 12.0),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(card.title),
+                    if (card.subtitle != null) Text(card.subtitle!),
+                  ],
+                ),
               ),
-              child: Icon(
-                Icons.keyboard_arrow_right_rounded,
-                size: 24.0,
-                color: AppColors.iconSecondary,
-              ),
-            )
-          ],
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 16.0,
+                  right: 8.0,
+                ),
+                child: Icon(
+                  Icons.keyboard_arrow_right_rounded,
+                  size: 24.0,
+                  color: AppColors.iconSecondary,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
