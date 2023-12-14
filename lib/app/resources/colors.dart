@@ -15,4 +15,5 @@ abstract class AppColors {
   static const Color userImageShadow = Color(0x7A1D1D25);
   static const Color cardShadow1 = Color(0x124F4F6C);
   static const Color cardShadow2 = Color(0x14000000);
+  static const Color transparent = Colors.transparent;
 }

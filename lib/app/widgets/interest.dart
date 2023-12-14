@@ -35,6 +35,7 @@ class _InterestState extends State<Interest> {
       label: Text(widget.name),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
+        side: const BorderSide(color: AppColors.transparent),
       ),
       padding: const EdgeInsets.symmetric(
         horizontal: 12.0,
