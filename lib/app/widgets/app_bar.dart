@@ -22,6 +22,7 @@ class CustomAppBar extends StatelessWidget {
         onPressed: () {},
       ),
       flexibleSpace: FlexibleSpaceBar(
+        collapseMode: CollapseMode.pin,
         background: Center(
           child: Column(
             children: <Widget>[
