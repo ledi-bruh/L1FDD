@@ -1,16 +1,17 @@
-# fall_2023_project
+# Flutter-разработка. Лабораторная работа №1. Приложение Sbercraft
 
-A new Flutter project.
+- **Windows 11**
+- **VSCode 1.85.0**
+- **Dart 3.2.3**
+- **DevTools 2.28.4**
+- **Flutter 3.16.3**
 
-## Getting Started
+Данный проект включает в себя разработку дизайна экрана мобильного приложения Sbercraft.
 
-This project is a starting point for a Flutter application.
+Приложение включает в себя следующий функционал:
 
-A few resources to get you started if this is your first Flutter project:
+- Просмотр доступных подписок
+- Управление тарифами и лимитами
+- Выбор предпочтений
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[🪄 Демо]()
