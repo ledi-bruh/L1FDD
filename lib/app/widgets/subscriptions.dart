@@ -21,6 +21,9 @@ class Subscriptions extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(
+              parent: AlwaysScrollableScrollPhysics(),
+            ),
             separatorBuilder: (BuildContext context, int index) {
               return const SizedBox(width: 8.0);
             },
